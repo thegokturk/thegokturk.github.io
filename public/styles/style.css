@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+body {
+    font-size: 20px;
+    color: #3b4045;
+    font-family: 'Schoolbell';
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.brandname {
+    font-size: 25px;
+    color: #3b4045;
+    padding-left: 25px;
+    font-weight: lighter;
+    font-family: 'Schoolbell';
+}
+
+.navmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+}
+  
+a {
+    text-decoration: none;
+    color: #3b4045;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navhrefs {
+    position: fixed;
+    width: 90%;
+    top: 90px;
+    left: 25px;
+    background-color: #a7eee8;
+}
+  
+.navhrefs a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+  
+.navhrefs a:hover {
+    background-color: #30d5c8;
+}
+  
+.close {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .navhrefs {
+        background: none;
+        position: static;
+        display: block;
+        width: auto;
+        margin-right: 5px;
+    }
+    .navhrefs a {
+        display: inline-block;
+        padding: 5px 10px;
+        font-size: 17px;
+    }
+    .formobile {
+        display: none;
+    }
+}
+  
+.formobile {
+    padding-right: 25px;
+    cursor: pointer;
+}
+  
+.formobile .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: #3b4045;
+}
+
+
+.msdivs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.msimg {
+    text-align: right;
+    width: 100%;
+    margin-right: -30px;
+}
+
+.mstext {
+    text-align: left;
+    width: 100%;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .msdivs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 90px;
+    }
+    
+    .msimg {
+        text-align: right;
+        width: 100%;
+        margin-left: 170px;
+    }
+    
+    .mstext {
+        text-align: left;
+        width: 100%;
+        margin-left: 150px;
+        margin-right: 200px;
+    }
+}

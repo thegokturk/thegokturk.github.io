@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language</title>
+    <link rel="icon" href="/img1/icon.png" type="image/png">
+    <link href="/styles/slanguage.css" rel="stylesheet">
+</head>
+<body>
+    <header class="headerpage">
+        <nav>
+            <h1>Language of Turkic Khaganate</h1>
+        </nav>
+    </header>
+
+    <div class="info">
+        <p>You can search for a word in today's modern Turkish language and see its old equivalent in old Turkic language in the dictionary below.</p>
+        <p>Notice that not all words in old Turkic is known and you may not be able to find the word you are looking for.</p>
+    </div>
+
+    <main>
+		<form>
+            <label for="search">
+                <input type="text" id="search" name="search" placeholder="(DEMO version) Type a word in Turkish...">
+            </label>
+            <button id="search-button" type="submit">Search</button>
+        </form>  
+
+		<div class="hide" id="result"></div>
+	</main>
+
+    <div class="info">
+        <p>You can write a text in the latin alphabet and convert it to the Turkic alphabet using the application below.</p>
+        <p>Notice that the result you will get is a simplified version of the old Turkic and the text is written from right to left in old Turkic.</p>
+    </div>
+
+    <main>
+    <div class="container">
+        <div class="input-box">
+          <input id="latin-input" type="text" placeholder="Write your text here...">
+        </div>
+        <div class="output-box">
+          <textarea id="turkic-output" placeholder="Output will be here..."></textarea>
+        </div>
+      </div>
+      <button id="convert-btn" style="margin-left: 20px;">Convert to Turkic</button>
+    </main>
+
+    <script src="/scripts/dictionary/dict.js"></script>
+    <script src="/scripts/dictionary/convert.js"></script>
+
+    <div style="margin: 30px;">©<span id="curyear"></span> Kocak | All Rights Reserved</div>
+    <script src="/scripts/licenseyear.js"></script>
+</body>
+</html>
